@@ -34,5 +34,5 @@ jobs:
             --locale="en-US" \
             --endpoint="https://165.22.90.15/v1" \
             --project="6024f306a015c" \
-            --key="3a926408952baf6f04eee034b75d551a323077b4e5ee36971dda1a862fdc628392f08ac1ef56731d8f706551f195d20e42e98a063eec729ece75e7aee5dc16c499e3dace6020f4bc95c8449b469e6b4e4d322266df3961306c2fd2087fd467448d1bb7ebf2041804721149e1c97aeb3a5f95c2e0042a1aae0a623d55d4e8956a"
+            --key="${{ secrets.APPWRITE_API_KEY }}"
           appwrite version
