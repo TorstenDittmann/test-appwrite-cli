@@ -27,7 +27,7 @@ jobs:
       
       - uses: torstendittmann/appwrite-cli-action@v1
         with:
-          endpoint: 'https://165.22.90.15/v1'
+          endpoint: 'https://test.monitor-api.com/v1'
           project: '6024f306a015c'
           key: '${{ secrets.APPWRITE_API_KEY }}'
 
