@@ -25,7 +25,7 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
       
-      - uses: torstendittmann/appwrite-cli-action@v1
+      - uses: torstendittmann/appwrite-cli-action@v2
         with:
           endpoint: 'https://test.monitor-api.com/v1'
           project: '6024f306a015c'
