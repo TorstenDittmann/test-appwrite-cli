@@ -30,8 +30,5 @@ jobs:
 
       - name: Setup Appwrite CLI
         run: |
-          docker run -i --rm --volume appwrite-cli:/usr/local/code/app/.preferences/ -e endpoint=https://appwrite.io/v1 -e X-Appwrite-Project=6013fbefdfa41 -e X-Appwrite-Key=35y3h5h345 -e X-Appwrite-Locale=en-US appwrite/cli:0.1.0 version
-          appwrite client setEndpoint --endpoint="http://167.172.51.7/v1"
-          appwrite client setProject --project="6022ae0eccbb6"
-          appwrite client setKey --key="7e8ca0025e5d5be5d027f2c17b10a1036c8c529ac5245b07b058e24e52bc394085a0f5640d81eab36c08d9c14ecab49fb7db0d13cd9be6a8ef176404c3b95a2c2b727f73adfd2308e588dae2e2d330f47739f037d001a10fde4b30138016cece475b433a8f2793a88c4f00083f23192d898bf8bddeef88e5b43178005e2f6b0a"
+          appwrite init --locale="en-US" --endpoint="https://165.22.90.15/v1" --project="6024f306a015c" --key="3a926408952baf6f04eee034b75d551a323077b4e5ee36971dda1a862fdc628392f08ac1ef56731d8f706551f195d20e42e98a063eec729ece75e7aee5dc16c499e3dace6020f4bc95c8449b469e6b4e4d322266df3961306c2fd2087fd467448d1bb7ebf2041804721149e1c97aeb3a5f95c2e0042a1aae0a623d55d4e8956a"
           appwrite version
