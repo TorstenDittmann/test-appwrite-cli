@@ -32,4 +32,4 @@ jobs:
           key: '${{ secrets.APPWRITE_API_KEY }}'
 
       - name: Test Appwrite CLI
-        run: appwrite users create --email="hello@appwrite.io" --password="my-secret"
+        run: appwrite users list
