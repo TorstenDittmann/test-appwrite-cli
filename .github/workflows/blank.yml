@@ -24,15 +24,12 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
+      
+      - uses: actions/appwrite-cli-action@v1
+        with:
+          endpoint: 'https://165.22.90.15/v1'
+          project: '6024f306a015c'
+          key: '${{ secrets.APPWRITE_API_KEY }}'
 
-      - name: Install Appwrite CLI
-        run: curl -sL https://appwrite.io/cli/install.sh | bash
-
-      - name: Setup Appwrite CLI
-        run: |
-          appwrite init \
-            --locale="en-US" \
-            --endpoint="https://165.22.90.15/v1" \
-            --project="6024f306a015c" \
-            --key="${{ secrets.APPWRITE_API_KEY }}"
-          appwrite version
+      - name: Test Appwrite CLI
+        run: appwrite version
